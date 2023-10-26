@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>options</title>
+
+</head>
+<body>
+	<form>
+		<label>name</label>
+		<input type="text" name=""><br><br>
+		<label>rollno</label>
+		<input type="text" name=""><br><br>
+	<select onchange="getcollege(this.value)" style="width: 300px;height: 30px;">
+		<option>--select college--</option>
+		<option value="aec">aec</option>
+		<option value="aec">aec</option>
+		<option value="aec">aec</option>
+		<option value="aec">aec</option>
+		
+	</select></form><br><br>
+	<input type="submit" name="">
+	<p id="p_id"></p>
+	<script type="text/javascript">
+		function getcollege(college_name){
+			document.getElementId('p_id')innerText = value_name;
+		}
+	</script>
+
+</body>
+</html>

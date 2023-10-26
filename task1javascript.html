@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var trainees=[{
+			'name':'isha',
+			'Rollno':'415',
+			'Branch':'ECE',
+			'college':'ACET',
+		},
+		{
+			'name':'isha',
+			'Rollno':'479',
+			'Branch':'EEE',
+			'college':'ACOE',
+		},
+		{
+			'name':'isha',
+			'Rollno':'479',
+			'Branch':'EEE',
+			'college':'ACOE',
+		},
+		{
+			'name':'isha',
+			'Rollno':'479',
+			'Branch':'EEE',
+			'college':'ACOE',
+		}]
+
+		for (var i =0; i < trainees.length; i++) {
+			for(keys in trainees[i]){
+				document.write((i+1)+"."+trainees[i][keys]+ "   ")
+			}
+			document.write("<br>")
+		}
+	</script>
+</body>
+</html>

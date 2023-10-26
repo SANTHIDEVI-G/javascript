@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>enter name</label>
+		<input type="text" name="" value="" onkeyup="sample(this.value)">
+		<br>
+		<span id="sp_id"></span>
+		
+		
+	</form>
+	<script type="text/javascript">
+		function sample(color_value){
+			document.ElementById('sp_id').innerText = color_value;
+			document.body.style.background=color_value
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i=0;
+		var images=[];
+		var time=1000;
+		//Image List
+		images[0]='imag1.jpg';
+		images[1]='imag2.jpg';
+		images[2]='imag2.jpg';
+		images[3]='imag3.jpg';
+		images[4]='imag2.jpg';
+		images[5]='imag2.jpg';
+		images[6]='imag2.jpg';
+		//change image
+		function changeimage(){
+			document.slide.src=images[i];
+			if (i < images.length-1){
+				i++;
+			}
+			else{
+				i=0;
+			}
+			setTimeout("changeimage()",time);
+		}
+		window.onload=changeimage;
+	</script>
+
+	<img name="slide" width="700" height="500">
+
+</body>
+</html>

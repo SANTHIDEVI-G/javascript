@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class</title>
+</head>
+<body>
+	<h1>constructor</h1>
+	<script type="text/javascript">
+		// class student{
+		// 	constructor(rno){
+		// 		this.rollno = rno
+		// 	}
+		// }
+		// let obj = new student(1234)
+		// console.log(obj.rollno)
+		class student{
+			constructor(rno,fname,lname){
+				this.rollno = rno;
+				this.firstname = fname;
+				this.lastname = lname;
+				this.getfullname = function(){
+					return this.firstname+""+this.lastname
+				}
+			}
+		}
+		let Obj = new student(1234,'santhi','devi')
+		console.log(Obj.rollno,Obj.firstname,Obj.lastname)
+		//--------------or--------------
+		let trainee = new student (1234,'santhi','devi')
+		console.log(trainee.rollno,trainee.firstname,trainee.lastname)
+		let trainee1 = new student(9999,'devi','k')
+		//console.log(trainee1.rollno,trainee1.firstname,trainee1.lastname)
+		console.log(trainee.getfullname())
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button event</title>
+</head>
+<body>
+
+	<!--<button onclick="alert('button clicked')">click</button>-->
+	      <!--or-->
+	      <!--<button onclick="test()">click</button>-->
+	      <button>click</button>
+	      <script type="text/javascript">
+	      	// function test(){
+	      	// 	alert("button clicked")
+
+	      	// }
+
+            //2nd method using js using namedfunction
+            // let btn = document.querySelector('button');
+            // btn.onclick = test;
+            // function test(){
+            // 	alert("button clicked")
+            // }
+            // using anonyous function
+            let btn = document.querySelector('button');
+            btn.onclick = function(){
+            	alert("button clicked")
+            };
+
+            </script>
+
+
+</body>
+</html>

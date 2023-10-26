@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input event</title>
+</head>
+<button>click</button>
+<input type="text" class="name">
+<body>
+	<script type="text/javascript">
+		let btn = document.querySelector('button');
+		let ip = document.querySelector('.name');//or let ip = document.querySelector('input');
+            ip.onchange = function(){
+            	alert("input change")
+            };
+
+            
+	</script>
+
+</body>
+</html>

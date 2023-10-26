@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#special{
+			position: absolute;
+			top: 40%;
+			left: 40%;
+		}
+		#sp{
+			height: 30px;
+		}
+		#b1{
+			background-color: blue;
+			color: white;
+			border: none;
+			outline: none;
+			height: 60px;
+			width: 230px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="special">
+		name: <input id="sp" type="text"/><br>v<br>
+		<!-- <button id="b1" onclick="document.body.style.background='pink'">change background</button>   /// using html -->
+		<button id="b1">changebackground</button>
+	</div>
+	<script type="text/javascript">
+		// let btn = document.getElementById("bl")
+		// btn.onclick = change();
+		// function change(){
+		// 	document.body.style.background="pink"//using function
+
+		// } 
+		  //or using anonomous function
+		  let btn = document.getElementById("b1")
+		  btn.onclick = function(){document.body.style.background="pink"}
+
+	</script>
+
+</body>
+</html>

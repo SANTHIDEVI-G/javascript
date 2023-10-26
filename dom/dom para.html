@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom methods</title>
+</head>
+<body>
+	<ul>
+	<li>aec</li>
+	<li>ac</li>
+	<li>c</li>
+</ul>
+
+	<p class="topic">html</p>
+	<p class="topic">html</p>
+	<p class="topic">html</p>
+	<script type="text/javascript">
+		let para = document.getElementsByClassName('topic');
+		console.log(para);
+		para[0].innerHTML = "hypertext markup language";para[0].style.color="blue"
+		para[1].innerHTML = " markup language";
+		let lis = document.getElementsByTagName('li');
+		console.log(lis)
+		lis[0].innerText = 'aditya';//lis[0].style.color="red";
+		let ps = document.querySelector('.topic');
+		ps.innerText = 'santhi'
+		let li = document.querySelector('li');
+		li.innerText = '<span>santhi</span>'
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+function with no argument
+function with one argument
+function with 2 argument
+arrow function
+anonymous function
+callback function ex:setTime function
+
+
+

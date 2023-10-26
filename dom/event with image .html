@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="incrby1()">inc</button>
+	<button onclick="decrby1()">dec</button>
+	<p>output</p>
+	<p id="output_id"></p>
+	<script type="text/javascript">
+		var i = 1;
+		function incrby1(){
+			if(i<6){
+				var res = i++;
+				document.getElementById('output_id').innerText=res
+			}
+		}
+		
+		
+		
+	</script>
+
+</body>
+</html>

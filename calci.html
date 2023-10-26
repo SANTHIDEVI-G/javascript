@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<style type="text/css">
+		td{  
+
+			font-weight: bold;
+			border:1px solid blue;
+		}
+		td:not(#result_id){
+			cursor:point;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+         <center> <h1>calculator</h1>
+	<table border=1 cellspacing=0 cellpadding=6 width="400">
+		<tr>
+			<td colspan="4" text-align="right" height="50px";id="sum_id"> </td>
+	    </tr>
+	
+			<tr>
+				
+				<td onclick="getnum('9')">9</td>
+				<td onclick="getnum('8')">8</td>
+				<td onclick="getnum('7')">7</td>
+				<td onclick="getnum('/')">/</td>
+
+			</tr>
+			<tr>
+				<td onclick="getnum('6')">6</td>
+				<td onclick="getnum('5')">5</td>
+				<td onclick="getnum('4')">4</td>
+				<td onclick="getnum('*')">*</td>
+				
+			</tr>
+			<tr>
+				<td onclick="getnum('3')">3</td>
+				<td onclick="getnum('2')">2</td>
+				<td onclick="getnum('1')">1</td>
+				<td onclick="getnum('-')">-</td>
+			</tr>
+			<tr>
+				<td onclick="getnum('0')">0</td>
+				<td onclick="clearall()">c</td>
+				<td onclick="getnum('=')">=</td>
+				<td onclick="getnum('+')">+</td>
+			</tr>
+		
+	</table>
+</center>
+	<script type="text/javascript">
+		
+		function getnum(val){
+			if(val=='=') {
+				let res = document.getElementById('sum_id').innerText;
+				document.getElementById('sum_id').innerText=eval(res)
+			}else{
+				document.getElementById('sum_id').innerText +=val;
+			}
+
+		}
+		function clearall(){
+			document.getElementById('sum_id').innerText =' '
+		}
+
+
+	
+	</script>
+
+</body>
+</html>

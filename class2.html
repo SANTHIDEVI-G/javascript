@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class2</title>
+</head>
+<body>
+	<script>
+		var trainees=[{
+			'name':'hari',
+			'rollno':234,
+			'college':'aec',
+			'branch':'ece',
+			'gmail':'santhi@123gmail.com'
+			
+		},
+		{
+		    'name':'santhi',
+			'rollno':334,
+			'college':'aec',
+			'branch':'ece',
+			'gmail':'santhi@123gmail.com'
+		},
+			{
+		    'name':'devi',
+			'rollno':234,
+			'college':'aec',
+			'branch':'ece',
+			'gmail':'santhi@123gmail.com'
+			}]
+			//for (var i = 0; i <trainees.length; i++) {
+
+			//console.log(i+1,trainees[i].name,trainees[i].rollno,trainees[i].college,trainees[i].branch)
+			//}
+			for (var i = 0; i < trainees.length; i++) {
+			for (key in trainees[i]){
+				document.write(trainees[i][key])
+			}
+		document.write("<br>");
+}
+		</script>
+
+</body>
+</html>

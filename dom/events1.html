@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>events</title>
+	<style type="text/css">
+		#special{
+			position: absolute;
+			top: 40%;
+			left: 40%;
+		}
+		#sp{
+			height: 30px;
+		}
+		#b1{
+			background-color: blue;
+			color: white;
+			border: none;
+			outline: none;
+			height: 60px;
+			width: 230px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="special">
+		name: <input id="sp" type="text"/><br><br>
+		<!-- <button id="b1" onclick="document.body.style.background='pink'">change background</button>   /// using html -->
+		<button id="b1" onclick="change()">changebackground</button>
+	</div>
+	<script type="text/javascript">
+		function change(){
+			document.body.style.background='pink'//using function
+
+		} 
+</script>
+
+</body>
+</html>

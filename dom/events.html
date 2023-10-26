@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>events</title>
+</head>
+<body>
+	<!--inline event handler-->
+	<!--<button onclick="test()">click here</button>-->
+	<button id=btn_id>click</button>
+	<script type="text/javascript">
+		// function test(){
+		// 	alert("testing...")
+		// 	document.body.style.background='pink'
+		// }
+		// //2nd way
+		// let btn = document.getElementById('btn_id');
+		// btn.onclick=function(){
+		// 	alert('hi')
+		// 	document.body.style.background = 'green'
+		// }
+		// //1 way
+		// function test(){
+		// 	alert("testing..")
+		// 	document.body.style.background = 'orange'
+		// }
+
+
+
+
+
+
+
+		//3rd way
+	
+	//
+
+
+	let btn = document.getElementById('btn_id');
+	btn.addEventlistener('click',function(){
+		alert("testing...")
+		document.body.style.background = 'green'
+		//document.getElementById('sp_id').style.display = 'blue'
+	})
+
+
+	</script>
+
+</body>
+</html>

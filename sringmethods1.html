@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sting method</title>
+</head>
+<body>
+	<table border="" cellspacing="">
+		<tr>
+			
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td></td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr><tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+
+			
+		</tr><tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str){
+			document.write("<b>"+str+"</b><br>")
+		}
+		let name = 'drive ready'
+		getstr(name)
+		getstr(name.length)//find the length of string
+		getstr(name.charAt(2))
+		getstr(name.indexOf('v'))//to find index value 3
+		getstr(name.indexOf('ready'))//6
+		//getstr("Index of 2nd way = "+name.indexOf('ready')")//position of 6
+		getstr("last Index of string="+name.lastIndexOf('r'))//position of 6
+		let name1 = 'DRIVE READY';
+		getstr("TO Lower Case = "+name1.toLowerCase())
+		getstr("TO Upper Case = "+name1.toUpperCase())
+		let name2 = 'Batch';
+		let name3 = 'fn'
+		let name4 = 'fsd'
+		getstr("concat of string ="+name1.concat(name2))
+		getstr("concat of string ="+name1.concat(name2,name3,name4))
+		let username = 'santhidevi'
+		getstr("trim() method = "+username.trim())//removingthe the spaces of left and right
+		//converting sting into array=>stringname.split()
+		console.log(name.split(""));
+		let name5 = 'santhidevi&laxmi,adhi';
+		console.log(name5.split("&"));//how to convert string into array by using split method
+		console.log(name5.split(","));
+		let name6 = 'santhi';
+		console.log(name6.startsWith('s'))//true in output
+		console.log(name6.startsWith('a'))//flase in output
+		console.log(name6.endsWith('i'))//true in output
+		console.log(name6.endsWith('a'))//flase in output
+		      //slice method
+		//ss('slice of string = '+str.slice(sta))
+		getstr('slice of string = '+name.slice(1,4));//1,(4-1)
+		getstr('slice of string = '+name.slice(-3));//-3,-2,-1
+		getstr('slice of string = '+name.slice(-4,-2));//-4,(-2,-1)=-3,i.e-4,-3
+		//substring
+		 getstr('substring of string ='+name.substring(1,4));//=(1,4-1)
+		 getstr('substring of string ='+name.substring(4,1));//4,1=1,4 is same
+		 getstr('substring of string ='+name.substring(-1));
+		 //substr method
+		 getstr("substr method ="+name.substr(0,4))//driv
+		//substring method
+		//it is allowing th +ve index including method 
+		getstr('includes of string ='+name.includes('ready'));//true
+		//replace method
+		getstr('replace of string ='+name.replace('ready','course'))
+		//repeat method
+
+		getstr('repeat of string ='+name6.repeat(2))//santhi santhi
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+		</tr>
+	</table>
+
+</body>
+</html>
